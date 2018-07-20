@@ -1,0 +1,48 @@
+{
+	"name": "fizz",
+	"version": "0.0.0",
+	"description": "Microservice for image upload with resizing and format conversion",
+	"license": "MIT",
+	"repository": "niksrc/fizz",
+	"author": {
+		"name": "Nikhil Srivastava",
+		"email": "niksrc@gmail.com",
+		"url": "niksrc.cc"
+	},
+	"engines": {
+		"node": ">=8.9.1"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"microservice",
+		"image",
+		"resize",
+		"transform"
+	],
+	"dependencies": {
+		"aws-sdk": "^2.278.1",
+		"micro": "^9.3.2",
+		"micro-upload": "^1.0.1",
+		"sharp": "^0.20.5"
+	},
+	"devDependencies": {
+		"ava": "^0.20.0",
+		"xo": "^0.20.3"
+	},
+	"prettier": {
+		"printWidth": 100,
+		"useTabs": true,
+		"semi": true,
+		"singleQuote": true,
+		"trailingComma": "all",
+		"bracketSpacing": true
+	},
+	"xo": {
+		"prettier": true
+	}
+}
